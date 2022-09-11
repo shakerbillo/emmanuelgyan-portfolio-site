@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<meta name="description", content="this is a quiz">
+	<title>Accessibility Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+
+
+</head>
+<header>
+
+	<img src="/Users/shakerbillo/Desktop/Web Projects/Responsive Web Design/Quiz/Pressplay2V3.png" id="logo">
+
+	<h1>HTML/CSS Quiz</h1>
+
+	<nav>
+		<ul>
+			<li><a href="student-info" accesskey="i">INFO</a></li>
+			<li><a href="html-questions" accesskey="h">HTML</a></li>
+			<li><a href="css-questions" accesskey="c">CSS</a></li>
+			
+      	</ul>
+	</nav>
+	
+
+</header>
+<body>
+		<main>
+
+			  <form action="https://github.com/shakerbillo/HTML-CSS-Projects" method="post">
+			  	 <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="name" name="student-name" id="student-name" placeholder="Enter your name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" placeholder="Enter your Email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+
+
+				<section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+
+          <div class="question-block">
+          	<p>1</p>
+          	 <fieldset class="question" name="question">
+            <legend>The legend element represents a caption for the content of its
+                parent fieldset element</legend>
+               <ul class="answers-list">
+              <li><label for="radio"><input type="radio" id="radio" name="group1" value="True"/>True</label></li>
+          	 			<li><label for="radio"><input type="radio" id="radio" name="group1" value="False"/>False</label></li>
+          	 			
+          	 		</ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="question">
+              <legend>A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id</legend>
+               <ul class="answers-list">
+               	
+               	
+          	 			<li><label for="radio"><input type="radio" id="radio" name="group2"value="True" />True</label></li>
+          	 			<li><label for="radio"><input type="radio" id="radio" name="group2" value="False"/>False</label></li>
+          	 		</ul>
+            </fieldset>
+           </div>
+        </section>
+
+        <section role="region" aria-labelledby="css-questions">
+
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+          	<div class="question-block">
+              <label for="question">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select id="question" name="question" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+
+          	<div class="question-block">
+              <label for="question2">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+            	<textarea rows="5" cols="24" placeholder="Who is flexbox..."  id="question2" name="question2"></textarea>
+            </div>
+          </div>
+        </section>
+
+       <button type="submit">Submit</button>
+      </form>
+    </main>
+
+     <footer>
+     	<address>
+     	<a href="https://www.instagram.com/shakerbillo/">Players Entertainment</a><br />
+Videnska<br />
+Brno<br />
+Czech republic
+
+     	</address>
+  	
+  </footer>
+  </body>
+
+ 
+</html>
